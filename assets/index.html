@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <!--===== unicons =====-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--===== css link =====-->
     <link rel="stylesheet" href="css/styles.css">
     <title>My Protfolio</title>
@@ -35,12 +37,12 @@
                 </li>
                 <li class="nav_item">
                   <a href="#services" class="nav_link">
-                    <i class="uil uil-briefcase nav_icon"></i> Services
+                    <i class="uil uil-briefcase nav_icon"></i> My-Project
                   </a>  
                 </li>
                 <li class="nav_item">
-                  <a href="#portfolio" class="nav_link">
-                    <i class="uil uil-scenery nav_icon"></i> Portfolio
+                  <a href="blog.html" target="_blank" class="nav_link">
+                    <i class="uil uil-scenery nav_icon"></i> Blog
                   </a>  
                 </li>
                 <li class="nav_item">
@@ -80,7 +82,7 @@
      </div>
 
 <div class="home_img">
-  <img class="home_blob-img" src="img/my-img.jpg" alt="">
+  <img src="img/My-profetional-img.jpg" alt="" class="about_img">
 </div>
 
 <div class="home_data">
@@ -109,26 +111,28 @@
 
   <!--============ ABOUT ============-->
   <section class="about section" id="about">
-    <h2 class="section_title">About Me</h2>
+   <div>
+     <h2 class="section_title">About Me</h2>
     <span class="section_subtitel">My introduction <span/>
+   </div>
 
    <div class="about_container container grid">
-     <img src="img/about.jpg" alt="" class="about_img">
-
-     <div class="about_data">
-       <p class="about_description">Web developer, with extensive knowledge ond years of experience. Working in web technologies and UI / UX design , delivering</p>
+     
+      <img class="" src="img/loptop.jpg" alt="">
+     <div class="about_data">Hi I am Salma Aktar an innovative, enthusiastic web-developer always determined to work hard and meet tight deadlines. I am a good team player and a good listener also. I have strong technical skills in Front-end technologies and focused with Back-end technologies.
+       <p class="about_description">Working in web technologies and UI / UX design , delivering</p>
 
        <div class="about_info">
          <div>
-           <span class="about_info-title">08+</span>
+           <span class="about_info-title">01+</span>
            <span class="about_info-name">Years <br> experience</span>
          </div>
          <div>
-           <span class="about_info-title">10+</span>
+           <span class="about_info-title">8+</span>
            <span class="about_info-name">Completed <br> project</span>
          </div>
          <div>
-           <span class="about_info-title">05+</span>
+           <span class="about_info-title">Fresher</span>
            <span class="about_info-name">Companies <br> Worked</span>
          </div>
        </div>
@@ -143,11 +147,46 @@
    </div>   
   </section>
 
+  <!--=========== Porduct details ==========-->
+  <div class="container px-4">
+    <h1 class="project-t">My Projects</h1>
+  <div class="row gx-5">
+    <div class="col">
+     <div class="p-3 border rounded-3 shadow-lg">
+      <img src="img/product/Screenshot_1.png" alt="">
+      <h2 class="product-title">Dril-Machine (Full Stack)</h2>
+      <p><span class="technology">Technology Used:</span> React,react router hooks, Node, Express, MongoDB,, React Bootstrap, Heroku , Firebase, Firebase Authentication, Private Routing</p>
+       <a href="https://dril-machine.web.app/" target="_blank" class="button">Live-Link</a>
+       <a href="/assets/product-details/dril-detail.html" class="button">Details</a>
+      </a>
+     </div>
+    </div>
+    <div class="col">
+      <div class="p-3 border rounded-3 shadow-lg">
+      <img src="img/product/fruit-bg.png" alt="">
+      <h2 class="product-title">Fruit-warehouse(Full Stack)</h2>
+      <p><span class="technology">Technology Used:</span> React,react router hooks, Node, Express, MongoDB,, React Bootstrap, Heroku , Firebase, Firebase Authentication, Private Routing.</p>
+       <a href="https://sweet-fruit-house.firebaseapp.com/" target="_blank" class="button">Live-Link</a>
+       <a href="/assets/product-details/Fruit-details.html" class="button">Details</a>
+      </div>
+    </div>
+    <div class="col">
+      <div class="p-3 border rounded-3 shadow-lg">
+        <img src="img/product/product-3.png" alt="">
+      <h2 class="product-title">Wedding Photo</h2>
+     <p><span class="technology">Technology Used:</span> React, React Bootstrap, React Hook Form , React Router & Firebase Hosting, Firebase Authentication, Private Routing .</p>
+      <a href="https://salma-s-photography.web.app/" target="_blank" class="button">Live-Link</a>
+      <a href="/assets/product-details/photo-detail.html" class="button">Details</a>
+      </div>
+    </div>
+  </div>
+</div>
+
   <!--=========== SKILS =========-->
-<section class="skills section" id="skills">
+<section class="skills section" id="skills">      
  <h2 class="section_title">Skills</h2>
  <span class="section_subtitel">My technical level</span>
- <div class="skills_container container grid">
+ <div class="skills_container container g  id">
    <!--=========== SKILS 1 =========-->
    <div class="skills_content skills_open">
      <div class="skills_header">
@@ -155,7 +194,7 @@
 
        <div>
          <h1 class="skills_title">Frontend developer</h1>
-         <span class="skills_subtitle">More than 4 years</span>
+         <span class="skills_subtitle">1 year</span>
        </div>
 
        <i class="uil uil-angle-down skills_arrow"></i>
@@ -211,7 +250,7 @@
 
        <div>
          <h1 class="skills_title">Backend developer</h1>
-         <span class="skills_subtitle">More than 2 years</span>
+         <span class="skills_subtitle">1 year</span>
        </div>
 
        <i class="uil uil-angle-down skills_arrow"></i>
@@ -267,7 +306,7 @@
 
        <div>
          <h1 class="skills_title">Designer</h1>
-         <span class="skills_subtitle">More than 2 years</span>
+         <span class="skills_subtitle">1 year</span>
        </div>
 
        <i class="uil uil-angle-down skills_arrow"></i>
@@ -324,12 +363,15 @@
            </a>
          </div>
 
-         <img src="img/Project.jpg" alt="">
-
+       <div>
+         <img class="project-img" src="img/my-project.jpg" alt="">
+       </div>
        </div>
      </div>
    </div>
+    <!--======== Blog =========-->
 
+    
 
    <!--=========== Contact Me =========-->
    <section class="contact section" id="contact">
@@ -366,34 +408,33 @@
          </div>
        </div>
 
-       <form action="" class="contact_form grid">
+       <form method="post" class="contact_form grid">
          <div class="contact_inputs grid">
            <div class="contact_content">
              <label for="" class="contact_label">Name</label>
-             <input type="text" class="contact_input">
+             <input type="text" class="contact_input name" id="name">
            </div>
 
            <div class="contact_content">
              <label for="" class="contact_label">Email</label>
-             <input type="email" class="contact_input">
+             <input type="email" class="contact_input email" id="email">
            </div>
-
            <div class="contact_content">
-             <label for="" class="contact_label">Project</label>
-             <input type="email" class="contact_input">
-           </div>
+             <label for="" class="contact_label">Subject</label>
+             <input type="text" class="contact_input subject" id="subject" autocomplete="off">
+           </div>   
 
            <div class="contact_content">
              <label for="" class="contact_label">Message</label>
-             <textarea name="" id="" cols="0" rows="7" class="contact_input"></textarea>
+             <textarea name="" id="message" cols="0" rows="7" class="contact_input msg"></textarea>
            </div>
          </div>
 
          <div>
-           <a href="#" class="button button--flex">
-             Send Message
+          <a type="submit" class="button button--flex" id="btn">Send Message
              <i class="uil uil-message button_icon"></i>
-           </a>
+          <a/>
+          
          </div>
        </form>
      </div>
@@ -415,7 +456,7 @@
           <a href="#about" class="footer_link">About</a>
         </li>
         <li>
-          <a href="#portfolio" class="footer_link">Portfolio</a>
+          <a href="#blog" class="footer_link">Portfolio</a>
         </li>
         <li>
           <a href="#contact" class="footer_link">Contact</a>
@@ -446,7 +487,10 @@
  <i class="uil uil-arrow-up scroll_icon"></i>
 </a>
 
-
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://smtpjs.com/v3/smtp.js">
+</script>
     <script src="js/main.js"></script>
 </body>
 </html>

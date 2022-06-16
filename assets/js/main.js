@@ -29,6 +29,50 @@ function linkAction() {
 }
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
+
+//========= Email send ==========//
+
+ const btn = document.getElementById('btn');
+ btn.addEventListener('click',function(e){
+    e.preventDefault()
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById("message").value;
+    const contact_form =
+      "name: " +
+      name +
+      "<br/> email:" +
+      email +
+      "<br/> subject" +
+      subject +
+      "<br/> message" +
+      message;
+
+    Email.send({
+      Host: "smtp.gmail.com",
+      Username: "technicalsalma@gmail.com",
+      Password: "tceyqyxcpwnngqnf",
+      To: "technicalsalma@gmail.com",
+      From: "email",
+      Subject: "subject",
+      body: "body",
+    }).then((message) => (message));
+ })
+
+// const form = document.querySelector(".contact_form"),
+// name = document.querySelector("name"),
+// email = document.querySelector('.email'),
+// msg = document.querySelector('.msg')
+
+// function sendMail(){
+//     var params = {
+//         from_name : d
+//     }
+// }
+
+
+
+
 //======== ACCORDING SKILLS =========//
 const skillsContent = document.getElementsByClassName("skills_content"),
   skillsHeader = document.querySelectorAll(".skills_header");
